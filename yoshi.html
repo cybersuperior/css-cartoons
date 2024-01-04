@@ -25,38 +25,35 @@
             background: var(--skin);
         }
 
-        #yoshi .head .head-main {
-            top: 40px;
-            left: 64px;
-            width: 79px;
-            height: 59px;
-            border-top: 1px solid var(--border);
-            border-left: 1px solid var(--border);
-            border-radius: 20% 90% 90% 20%/50% 51% 19% 23%;
-            -moz-border-radius: 20% 90% 90% 20%/50% 51% 19% 23%;
-            -webkit-border-radius: 20% 90% 90% 20%/50% 51% 19% 23%;
+        #yoshi .head .neck-top {
+            top: 48px;
+            left: 124px;
+            width: 12px;
+            height: 15px;
         }
 
-        #yoshi .head .head-top-inner {
-            top: 24px;
-            left: 87px;
-            width: 51px;
+        #yoshi .head .head-top-left {
+            top: 26.6px;
+            left: 89.5px;
+            width: 18px;
             height: 30px;
-            border-radius: 20% 50% 20% 20%;
-            -moz-border-radius: 20% 50% 20% 20%;
-            -webkit-border-radius: 20% 50% 20% 20%;
-            border-left: 1px solid var(--border);
+            border-radius: 100%;
+            -moz-border-radius: 100%;
+            -webkit-border-radius: 100%;
+            border: 1.4px solid var(--border);
+            transform: rotate(15deg)
         }
 
-        #yoshi .head .head-side {
-            top: 35px;
-            left: 128px;
-            width: 15px;
-            height: 52px;
-            border-right: 1px solid var(--border);
-            border-radius: 0% 51% 0% 0;
-            -moz-border-radius: 0% 51% 0% 0;
-            -webkit-border-radius: 0% 51% 0% 0;
+        #yoshi .head .head-top-right {
+            top: 27px;
+            left: 104px;
+            width: 25px;
+            height: 40px;
+            border-right: 1.4px solid var(--border);
+            border-top: 1.4px solid var(--border);
+            border-radius: 100% 100% 0% 0%;
+            -moz-border-radius:  100% 100% 0% 0%;
+            -webkit-border-radius:  100% 100% 0% 0%;
         }
 
 
@@ -83,8 +80,8 @@
         }
 
         #yoshi .head .left-eye .pupil {
-            top: 6px;
-            left: 6px;
+            top: 10px;
+            left: 7px;
         }
 
         #yoshi .head .left-eye .eyelid-top {
@@ -209,7 +206,7 @@
 
         #yoshi .head .right-eye .pupil {
             top: 10px;
-            left: 3px;
+            left: 5px;
         }
 
         #yoshi .head .right-eye .eyelid-top {
@@ -431,13 +428,13 @@
 <body>
     <div id="yoshi">
         <div class="head">
-            <div class="body head-main"></div>
             <div class="body eye-bulge"></div>
-            <div class="body head-top-inner"></div>
+            <div class="body head-top-left"></div>
+            <div class="body head-top-right"></div>
+            <div class="body neck-top"></div>
             <div class="body">
                 <div class="inner"></div>
             </div>
-            <div class="body head-side"></div>
             <div class="border left-eye eye">
                 <div class="pupil"></div>
                 <div class="body eyelid-top"></div>

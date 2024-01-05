@@ -30,27 +30,30 @@
             left: 124px;
             width: 12px;
             height: 15px;
+            border: 3px solid var(--border);
+            border-radius: 100% 20%;
+            transform: rotate(-65deg);
         }
 
         #yoshi .head .head-top-left {
-            top: 26.6px;
-            left: 89.5px;
+            top: 26px;
+            left: 89px;
             width: 18px;
             height: 30px;
             border-radius: 100%;
             -moz-border-radius: 100%;
             -webkit-border-radius: 100%;
-            border: 1.4px solid var(--border);
+            border: 2.5px solid var(--border);
             transform: rotate(15deg)
         }
 
         #yoshi .head .head-top-right {
             top: 27px;
             left: 104px;
-            width: 25px;
+            width: 26px;
             height: 40px;
-            border-right: 1.4px solid var(--border);
-            border-top: 1.4px solid var(--border);
+            border-right: 2.5px solid var(--border);
+            border-top: 2.5px solid var(--border);
             border-radius: 100% 100% 0% 0%;
             -moz-border-radius:  100% 100% 0% 0%;
             -webkit-border-radius:  100% 100% 0% 0%;
@@ -205,8 +208,8 @@
         }
 
         #yoshi .head .right-eye .pupil {
-            top: 10px;
-            left: 5px;
+            top: 10.7px;
+            left: 5.7px;
         }
 
         #yoshi .head .right-eye .eyelid-top {
@@ -394,6 +397,18 @@
             transform: rotate(50deg)
         }
 
+        #yoshi .head .cheek {
+            width: 40px;
+            height: 50px;
+            border-radius: 100%;
+            -moz-border-radius: 100%;
+            -webkit-border-radius: 100%;
+            border: 2px solid var(--border);
+            top: 58px;
+            left: 102.5px;
+            transform: rotate(57deg)
+        }
+
         #yoshi .head .ear::before {
             width: 110%;
             height: 100%;
@@ -428,9 +443,13 @@
 <body>
     <div id="yoshi">
         <div class="head">
+            
+            <div class="cheek"></div>
             <div class="body eye-bulge"></div>
+            
             <div class="body head-top-left"></div>
             <div class="body head-top-right"></div>
+            
             <div class="body neck-top"></div>
             <div class="body">
                 <div class="inner"></div>
@@ -448,6 +467,7 @@
             </div>
             <div class="border body nose"></div>
             <div class="nostril display-block-absolute"></div>
+            
         </div>
     </div>
 </body>

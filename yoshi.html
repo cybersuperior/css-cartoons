@@ -26,13 +26,37 @@
         }
 
         #yoshi .head .neck-top {
-            top: 48px;
+            top: 49px;
             left: 124px;
             width: 12px;
             height: 15px;
             border: 3px solid var(--border);
             border-radius: 100% 20%;
-            transform: rotate(-65deg);
+            transform: rotate(304deg);
+        }
+
+        #yoshi .head .neck-middle {
+            top: 49px;
+            left: 124px;
+            width: 12px;
+            height: 15px;
+            border: 3px solid var(--border);
+            border-radius: 100% 20%;
+            transform: rotate(304deg);
+        }
+
+        #yoshi .head .neck-overlap {
+            top: 47px;
+            left: 124px;
+            width: 6px;
+            height: 19px;
+        }
+
+        #yoshi .head .neck-overlap-lower {
+            top: 57px;
+            left: 123px;
+            width: 13px;
+            height: 14px;
         }
 
         #yoshi .head .head-top-left {
@@ -397,16 +421,17 @@
             transform: rotate(50deg)
         }
 
-        #yoshi .head .cheek {
+        #yoshi .head .jaw {
             width: 40px;
-            height: 50px;
+            height: 40px;
             border-radius: 100%;
             -moz-border-radius: 100%;
             -webkit-border-radius: 100%;
-            border: 2px solid var(--border);
-            top: 58px;
-            left: 102.5px;
-            transform: rotate(57deg)
+            border-bottom: 2px solid var(--border);
+            border-right: 1px solid white;
+            top: 60px;
+            left: 91px;
+            transform: rotate(39deg)
         }
 
         #yoshi .head .ear::before {
@@ -444,13 +469,18 @@
     <div id="yoshi">
         <div class="head">
             
-            <div class="cheek"></div>
+            <div class="jaw"></div>
             <div class="body eye-bulge"></div>
             
             <div class="body head-top-left"></div>
             <div class="body head-top-right"></div>
             
             <div class="body neck-top"></div>
+            
+            <div class="body neck-middle"></div>
+            <div class="body neck-overlap"></div>
+            
+            <div class="body neck-overlap-lower"></div>
             <div class="body">
                 <div class="inner"></div>
             </div>

@@ -13,6 +13,7 @@
             margin: 0 auto;
             
             --skin: #00dd00;
+            --white: #fff; 
             --hair: #853417;
             --border: #030A02;
         }
@@ -27,22 +28,38 @@
 
         #yoshi .head .neck-top {
             top: 49px;
-            left: 124px;
+            left: 127.1px;
             width: 12px;
             height: 15px;
-            border: 3px solid var(--border);
+            border-right: 2.4px solid var(--border);
+            border-bottom: 2.4px solid var(--border);
             border-radius: 100% 20%;
-            transform: rotate(304deg);
+            transform: rotate(312deg);
         }
 
         #yoshi .head .neck-middle {
-            top: 49px;
-            left: 124px;
-            width: 12px;
-            height: 15px;
-            border: 3px solid var(--border);
+            top: 61.3px;
+            left: 131px;
+            width: 20px;
+            height: 22px;
+            border-right: 2.4px solid var(--border);
+            border-bottom: 2.4px solid var(--border);
             border-radius: 100% 20%;
-            transform: rotate(304deg);
+            transform: rotate(308deg);
+            background: var(--white);
+        }
+
+        #yoshi .head .neck-lower {
+            top: 81.3px;
+            left: 122.4px;
+            width: 26px;
+            height: 20px;
+            border-right: 2.4px solid var(--border);
+            border-bottom: 2.4px solid var(--border);
+            border-radius: 100% 0%;
+            transform: rotate(5deg);
+            background: var(--white);
+        }
         }
 
         #yoshi .head .neck-overlap {
@@ -55,7 +72,7 @@
         #yoshi .head .neck-overlap-lower {
             top: 57px;
             left: 123px;
-            width: 13px;
+            width: 11.3px;
             height: 14px;
         }
 
@@ -74,7 +91,7 @@
         #yoshi .head .head-top-right {
             top: 27px;
             left: 104px;
-            width: 26px;
+            width: 27.2px;
             height: 40px;
             border-right: 2.5px solid var(--border);
             border-top: 2.5px solid var(--border);
@@ -353,10 +370,10 @@
         }
 
         #yoshi .head .nose {
-            top: 47px;
+            top: 48px;
             left: 66px;
-            width: 50px;
-            height: 50px;
+            width: 52px;
+            height: 48px;
             border: 2px solid var(--border);
             border-right: solid var(--skin);
             -webkit-border-radius: 100%;
@@ -427,10 +444,10 @@
             border-radius: 100%;
             -moz-border-radius: 100%;
             -webkit-border-radius: 100%;
-            border-bottom: 2px solid var(--border);
+            border-bottom: 2.4px solid var(--border);
             border-right: 1px solid white;
             top: 60px;
-            left: 91px;
+            left: 88px;
             transform: rotate(39deg)
         }
 
@@ -477,10 +494,12 @@
             
             <div class="body neck-top"></div>
             
-            <div class="body neck-middle"></div>
+            <div class=" neck-middle"></div>
             <div class="body neck-overlap"></div>
             
             <div class="body neck-overlap-lower"></div>
+            
+            <div class=" neck-lower"></div>
             <div class="body">
                 <div class="inner"></div>
             </div>

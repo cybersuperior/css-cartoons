@@ -47,17 +47,25 @@
             border-bottom: 2px solid transparent;
             border-radius: 100% 0%;
             transform: rotate(311deg);
-            background: var(--white);
         }
 
         #yoshi .head .neck-middle-color {
             top: 57px;
-            left: 120.2px;
-            width: 21px;
+            left: 119.2px;
+            width: 21.5px;
             height: 5.4px;
             border-right: 2px solid transparent;
             border-top: 2px solid transparent;
             border-radius: 0% 92% 0% 0%;
+            background: var(--skin);
+            transform: rotate(353deg)
+        }
+
+        #yoshi .head .neck-middle-color-connect {
+            top: 61.7px;
+            left: 140.2px;
+            width: 2px;
+            height: 2px;
             background: var(--skin);
             transform: rotate(353deg)
         }
@@ -86,7 +94,7 @@
             top: 54px;
             left: 126px;
             width: 69px;
-            height: 118px;
+            height: 118.8px;
             border-top: .6px solid var(--border);
             border-right: .8px solid transparent;
             border-left: .8px solid transparent;
@@ -102,9 +110,9 @@
 
         #yoshi .head .eye-lower {
             top: 54.4px;
-            left: 107px;
+            left: 107.3px;
             width: 18px;
-            height: 24px;
+            height: 22px;
             border-top: .8px solid var(--border);
             border-left: .8px solid transparent;
             border-radius: 100% 0%;
@@ -544,25 +552,57 @@
         }
 
         #yoshi .head .scale-top {
-            top: 45px;
-            left: 124px;
+            top: 44.4px;
+            left: 124.2px;
             width: 15px;
-            height: 12px;
+            height: 14px;
             border: 2px solid var(--border);
             background: var(--scale);
-            border-radius: 40% 40% 20% 40%;
+            border-radius: 40% 40% 0% 40%;
             transform: rotate(1deg);
         }
 
         #yoshi .head .scale-middle {
-            top: 63px;
-            left: 135px;
+            top: 63.2px;
+            left: 134.7px;
+            width: 15px;
+            height: 14px;
+            border: 2px solid var(--border);
+            background: var(--scale);
+            border-radius: 40% 40% 20% 40%;
+            transform: rotate(35deg);
+        }
+
+        #yoshi .head .scale-bottom {
+            top: 82.5px;
+            left: 130px;
             width: 15px;
             height: 12px;
             border: 2px solid var(--border);
             background: var(--scale);
             border-radius: 40% 40% 20% 40%;
-            transform: rotate(35deg);
+            transform: rotate(93deg);
+        }
+
+        #yoshi .head .neck-middle-overlay {
+            top: 63.6px;
+            left: 128.6px;
+            width: 19.4px;
+            height: 20px;
+            border-bottom: 2px solid transparent;
+            border-radius:0% 70% 100% 50%;
+            background: var(--white);
+            transform: rotate(342deg);
+        }
+
+        #yoshi .head .neck-middle-corner-overlay {
+            top: 63.8px;
+            left: 127.1px;
+            width: 19px;
+            height: 20px;
+            border-bottom: 2px solid transparent;
+            border-radius: 50% 100% 0% 0%;
+            background: var(--white);
         }
     </style>
 </head>
@@ -570,19 +610,14 @@
 <body>
     <div id="yoshi">
         <div class="head">
-
             <div class="scale-top"></div>
             
             <div class="jaw"></div>
             <div class="body eye-bulge"></div>
-
             <div class="body head-top-left"></div>
             <div class="body head-top-right"></div>
-
             <div class="body neck-top"></div>
-
             <div class="body neck-overlap"></div>
-
 
             <div class="border left-eye eye">
                 <div class="pupil"></div>
@@ -597,26 +632,25 @@
             </div>
 
             <div class="border body nose"></div>
-
             <div class="cheek-overlay cheek-overlay-color"></div>
-
             <div class="scale-middle"></div>
-            <div class="neck-middle"></div>
+            <div class="scale-bottom"></div>
             
+            <div class="neck-middle-overlay"></div>
             <div class="neck-middle-color"></div>
+            
+            <div class="neck-middle-color-connect"></div>
+            <div class="neck-middle"></div>
             <div class="neck-lower"></div>
-
             <div class="neck-lower-middle-connect"></div>
             <div class="body">
                 <div class="inner"></div>
             </div>
 
             <div class="body eye-lower"></div>
-
             <div class="cheek-overlay"></div>
             <div class="nostril nostril-left"></div>
             <div class="nostril nostril-right"></div>
-
             <div class="mouth"></div>
         </div>
     </div>
